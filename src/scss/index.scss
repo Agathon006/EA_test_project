@@ -1,0 +1,165 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    min-height: 100vh;
+
+    .left-top-paint-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .right-top-paint-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            margin-top: 60px;
+        }
+    }
+
+    .main {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-family: 'Poppins-Bold';
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 104%;
+            text-transform: uppercase;
+            color: #162C4E;
+            opacity: 0.39;
+        }
+
+        .subtitle-wrapper {
+            margin: 8px 0 32px;
+            max-width: 22%;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-family: 'Poppins-Regular';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .time-section {
+            margin-bottom: 72px;
+
+            .time-section-list {
+                display: flex;
+                justify-content: space-between;
+
+                .time-section-list__element {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .time-section-list__element-value {
+                        font-family: 'Poppins-SemiBold';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 72px;
+                        color: #162C4E;
+                    }
+
+                    .time-section-list__element-span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 54px;
+                        width: 132px;
+                        background-image: url(../images/time_background.svg);
+                        background-size: cover;
+
+                        font-family: 'Poppins-Regular';
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .event-page-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .event-page-section__link {
+                margin-top: 12px;
+                width: 240px;
+                height: 60px;
+                background: #1D4169;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-decoration: none;
+
+                .event-page-section__link-span {
+                    font-family: 'Poppins-Regular';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 192px;
+        background-color: #162C4E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer__input-wrapper {
+            position: relative;
+
+            .footer__input {
+                width: 440px;
+                padding: 16px 27px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+                border: none;
+                border-radius: 40px;
+
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .footer__input-button {
+                padding: 0;
+                position: absolute;
+                right: 8px;
+                top: 8px;
+                width: 43px;
+                height: 43px;
+                border: none;
+                border-radius: 100%;
+                background: #DF2224;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
     <link rel="stylesheet" href="./src/css/index.css">
     <script src="./src/scripts/index.js" defer></script>
 </head>
 
 <body>
-    <img src="./src/images/left_top_paint.svg" alt="left-top-paint" class="left-top-paint-image">
-    <img src="./src/images/right_top_paint.svg" alt="right-top-paint" class="right-top-paint-image">
     <div class="wrapper">
+        <img src="./src/images/left_top_paint.svg" alt="left-top-paint" class="left-top-paint-image">
+        <img src="./src/images/right_top_paint.svg" alt="right-top-paint" class="right-top-paint-image">
         <header class="header">
             <a href="./" class="logo">
                 <img src="./src/images/logo.svg" alt="logo">
             </a>
         </header>
         <main class="main">
-            <h1 class="title">UNDER CONSTRUCTION</h1>
-            <h3 class="subtitle">We're making lots of improvements and will be back soon</h3>
+            <h1 class="title">Under Construction</h1>
+            <div class="subtitle-wrapper">
+                <h3 class="subtitle">We're making lots of improvements and will be back soon</h3>
+            </div>
             <section class="time-section">
                 <ul class="time-section-list">
                     <li class="time-section-list__element">
@@ -53,14 +56,19 @@
             </section>
             <section class="event-page-section">
                 <h3 class="subtitle">Check our event page when you wait:</h3>
-                <a href="#" class="event-page-section__link">Go to the event</a>
+                <a href="#" class="event-page-section__link">
+                    <span class="event-page-section__link-span">Go to the event</span>
+                    <img src="./src/images/arrow-right.svg" alt="submit">
+                </a>
             </section>
         </main>
         <footer class="footer">
-            <input type="text" placeholder="Enter your Email and get notified" class="footer__input">
-            <button class="footer__input-button">
-                <img src="./src/images/arrow-right.svg" alt="submit-button">
-            </button>
+            <div class="footer__input-wrapper">
+                <input type="text" placeholder="Enter your Email and get notified" class="footer__input">
+                <button class="footer__input-button">
+                    <img src="./src/images/arrow-right.svg" alt="submit-button">
+                </button>
+            </div>
         </footer>
     </div>
 </body>
