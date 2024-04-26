@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/fonts.css">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <script src="./src/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/css/reset.css">
+    <link rel="stylesheet" href="./src/styles/css/fonts.css">
+    <link rel="stylesheet" href="./src/styles/css/index.css">
+    <script src="./src/scripts/index.js" type="module" defer></script>
 </head>
 
 <body>
+    <div class="pop-up-message-wrapper not-visible" id="pop-up-message" data-close="true">
+        <div class="pop-up-message-flex" data-close="true">
+            <div class="pop-up-message">
+                <button class="pop-up-message__close-button" data-close="true">
+                    <img src="./src/styles/images/close_button.svg" alt="close" class="pop-up-message__close-button-img"
+                        data-close="true">
+                </button>
+                <h2 class="pop-up-message__title">SUCCESS!</h2>
+                <p class="pop-up-message__content">You have successfully subscribed to the email newsletter</p>
+                <button class="pop-up-message__button" data-close="true">Close</button>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
-        <img src="./src/images/left_top_paint.svg" alt="left-top-paint" class="left-top-paint-image">
-        <img src="./src/images/right_top_paint.svg" alt="right-top-paint" class="right-top-paint-image">
+        <img src="./src/styles/images/1920/left_top_paint.svg" alt="left-top-paint" class="left-top-paint-image">
+        <img src="./src/styles/images/1920/right_top_paint.svg" alt="right-top-paint" class="right-top-paint-image">
         <header class="header">
             <a href="./" class="logo">
-                <img src="./src/images/logo.svg" alt="logo">
+                <img src="./src/styles/images/1920/logo.svg" alt="logo">
             </a>
         </header>
         <main class="main">
@@ -28,28 +41,28 @@
             <section class="time-section">
                 <ul class="time-section-list">
                     <li class="time-section-list__element">
-                        <span class="time-section-list__element-value">00</span>
+                        <span class="time-section-list__element-value" id="days">00</span>
                         <span class="time-section-list__element-span">Days</span>
                     </li>
                     <li class="time-section-list__element">
                         <span class="time-section-list__element-value">:</span>
                     </li>
                     <li class="time-section-list__element">
-                        <span class="time-section-list__element-value">00</span>
+                        <span class="time-section-list__element-value" id="hours">00</span>
                         <span class="time-section-list__element-span">Hours</span>
                     </li>
                     <li class="time-section-list__element">
                         <span class="time-section-list__element-value">:</span>
                     </li>
                     <li class="time-section-list__element">
-                        <span class="time-section-list__element-value">00</span>
+                        <span class="time-section-list__element-value" id="minutes">00</span>
                         <span class="time-section-list__element-span">Minutes</span>
                     </li>
                     <li class="time-section-list__element">
                         <span class="time-section-list__element-value">:</span>
                     </li>
                     <li class="time-section-list__element">
-                        <span class="time-section-list__element-value">00</span>
+                        <span class="time-section-list__element-value" id="seconds">00</span>
                         <span class="time-section-list__element-span">Seconds</span>
                     </li>
                 </ul>
@@ -58,15 +71,15 @@
                 <h3 class="subtitle">Check our event page when you wait:</h3>
                 <a href="#" class="event-page-section__link">
                     <span class="event-page-section__link-span">Go to the event</span>
-                    <img src="./src/images/arrow-right.svg" alt="submit">
+                    <img src="./src/styles/images/1920/arrow-right.svg" alt="submit">
                 </a>
             </section>
         </main>
         <footer class="footer">
             <div class="footer__input-wrapper">
-                <input type="text" placeholder="Enter your Email and get notified" class="footer__input">
-                <button class="footer__input-button">
-                    <img src="./src/images/arrow-right.svg" alt="submit-button">
+                <input type="email" placeholder="Enter your Email and get notified" class="footer__input" id="email-input">
+                <button class="footer__input-button" id="send-email-button">
+                    <img src="./src/styles/images/1920/arrow-right.svg" alt="submit-button">
                 </button>
             </div>
         </footer>
