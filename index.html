@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/styles/css/reset.css">
     <link rel="stylesheet" href="./src/styles/css/fonts.css">
     <link rel="stylesheet" href="./src/styles/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="./src/scripts/index.js" type="module" defer></script>
 </head>
@@ -21,25 +22,28 @@
                         data-close="true">
                 </button>
                 <h2 class="pop-up-message__title" id="popup-title">SUCCESS!</h2>
-                <p class="pop-up-message__content" id="popup-content">You have successfully subscribed to the email newsletter</p>
+                <p class="pop-up-message__content" id="popup-content">You have successfully subscribed to the email
+                    newsletter</p>
                 <button class="pop-up-message__button" data-close="true">Close</button>
             </div>
         </div>
     </div>
     <div class="wrapper">
-        <img src="./src/styles/images/1920/left_top_paint.svg" alt="left-top-paint" class="left-top-paint-image">
-        <img src="./src/styles/images/1920/right_top_paint.svg" alt="right-top-paint" class="right-top-paint-image">
+        <img src="./src/styles/images/1920/left_top_paint.svg" alt="left-top-paint"
+            class="left-top-paint-image animate__animated animate__fadeInTopLeft">
+        <img src="./src/styles/images/1920/right_top_paint.svg" alt="right-top-paint"
+            class="right-top-paint-image animate__animated animate__fadeInTopRight">
         <header class="header">
-            <a href="./" class="logo">
+            <a href="./" class="logo animate__animated animate__fadeInDown">
                 <img src="./src/styles/images/1920/logo.svg" alt="logo">
             </a>
         </header>
         <main class="main">
-            <h1 class="title">Under Construction</h1>
-            <div class="subtitle-wrapper">
+            <h1 class="title animate__animated animate__fadeInDown animate__delay-300ms">Under Construction</h1>
+            <div class="subtitle-wrapper animate__animated animate__fadeInDown animate__delay-300ms">
                 <h3 class="subtitle">We're making lots of improvements and will be back soon</h3>
             </div>
-            <section class="time-section">
+            <section class="time-section animate__animated animate__fadeInDown animate__delay-600ms">
                 <ul class="time-section-list">
                     <li class="time-section-list__element">
                         <span class="time-section-list__element-value" id="days">00</span>
@@ -68,7 +72,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="event-page-section">
+            <section class="event-page-section animate__animated animate__fadeInDown animate__delay-900ms">
                 <h3 class="subtitle">Check our event page when you wait:</h3>
                 <a href="#" class="event-page-section__link">
                     <span class="event-page-section__link-span">Go to the event</span>
@@ -78,7 +82,8 @@
         </main>
         <footer class="footer">
             <div class="footer__input-wrapper">
-                <input type="email" placeholder="Enter your Email and get notified" class="footer__input" id="email-input">
+                <input type="email" placeholder="Enter your Email and get notified" class="footer__input"
+                    id="email-input">
                 <button class="footer__input-button" id="send-email-button">
                     <img src="./src/styles/images/1920/arrow-right.svg" alt="submit-button">
                 </button>
