@@ -293,15 +293,15 @@ body {
         .accordion {
             display: flex;
             gap: 4px;
-            width: inherit;
-            height: inherit;
+            width: 100%;
+            height: 100%;
 
             .accordion__item {
                 display: flex;
                 gap: 1px;
 
                 .accordion__item-bottom-border {
-                    width: inherit;
+                    width: 100%;
                     height: 2px;
                     background-color: #DF2224;
                     box-shadow: 0px 0px 10px #FF1E00;
@@ -310,16 +310,38 @@ body {
                 .accordion__item-header-wrapper {
 
                     .accordion__item-header {
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
                         align-items: center;
-                        background: #162C4E;
+                        background: url(../images/event_placeholder_image.svg) center;
                         width: 85px;
                         height: 682px;
                         cursor: pointer;
 
+                        .accordion__item-header-background {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            transition: 1s;
+                        }
+
+                        .accordion__item-header-background--dark {
+                            background-color: rgba(0, 0, 0, 0.5)
+                        }
+
+                        .accordion__item-header-background--monocolor {
+                            background: #162C4E !important;
+                        }
+
+                        .accordion__item-header-background--color {
+                            background: linear-gradient(#162c4e00, #162C4E);
+                        }
+
                         .accordion__item-header-title {
+                            position: relative;
+                            z-index: 3;
                             font-family: 'SF-Pro-Display-Semibold';
                             writing-mode: vertical-rl;
                             transform: rotate(180deg);
@@ -329,6 +351,8 @@ body {
                         }
 
                         .accordion__item-header-number {
+                            position: relative;
+                            z-index: 3;
                             font-family: 'SF-Pro-Display-Medium';
                             margin: 40px 25px 20px 18px;
                             font-weight: 500;
