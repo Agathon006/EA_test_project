@@ -212,10 +212,11 @@ body {
   height: 192px;
   background-color: #162C4E;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .wrapper .footer .footer__input-wrapper {
+  margin-left: 740px;
   position: relative;
   width: 440px;
 }
@@ -243,6 +244,26 @@ body {
   border-radius: 100%;
   background: #DF2224;
   cursor: pointer;
+}
+.wrapper .footer .footer__down-link {
+  margin-right: 111px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.wrapper .footer .footer__down-link .footer__down-link-span {
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
 }
 .wrapper .title {
   margin: 110px 0 40px;
