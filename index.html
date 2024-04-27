@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/styles/css/reset.css">
     <link rel="stylesheet" href="./src/styles/css/fonts.css">
     <link rel="stylesheet" href="./src/styles/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="./src/scripts/index.js" type="module" defer></script>
 </head>
 
@@ -19,8 +20,8 @@
                     <img src="./src/styles/images/close_button.svg" alt="close" class="pop-up-message__close-button-img"
                         data-close="true">
                 </button>
-                <h2 class="pop-up-message__title">SUCCESS!</h2>
-                <p class="pop-up-message__content">You have successfully subscribed to the email newsletter</p>
+                <h2 class="pop-up-message__title" id="popup-title">SUCCESS!</h2>
+                <p class="pop-up-message__content" id="popup-content">You have successfully subscribed to the email newsletter</p>
                 <button class="pop-up-message__button" data-close="true">Close</button>
             </div>
         </div>
