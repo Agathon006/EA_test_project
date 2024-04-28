@@ -1,0 +1,17 @@
+@media (max-width: 320px) {
+  .pop-up-message-wrapper .pop-up-message-flex .pop-up-message {
+    width: 300px;
+  }
+  .wrapper .events-section {
+    width: 300px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    width: 300px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 300px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
+    width: 300px;
+  }
+}/*# sourceMappingURL=320px.css.map */

@@ -1,0 +1,118 @@
+@media(max-width: 425px) {
+
+    .wrapper {
+
+        .left-top-paint-image {
+            content: url(../images/360/left_top_paint.svg);
+        }
+
+        .right-top-paint-image {
+            content: url(../images/360/right_top_paint.svg);
+        }
+
+        .header {
+
+            .logo {
+                content: url(../images/360/logo.svg);
+                margin-top: 80px;
+            }
+        }
+
+        .main {
+
+            .subtitle-wrapper {
+                margin: 16px 0 40px;
+                max-width: 79%;
+            }
+        }
+
+        .footer {
+            height: 141px;
+
+            .footer__input-wrapper {
+                margin: 30px 0 16px;
+                width: 280px;
+
+                .footer__input {
+                    width: calc(100% - 68px - 20px);
+                    padding: 10px 18px 10px 20px;
+                }
+            }
+
+            .footer__down-link {
+                margin-bottom: 30px;
+                gap: 4px;
+            }
+        }
+
+        .title {
+            margin: 59px 0 20px;
+        }
+
+        .events-section {
+            width: 370px;
+            height: 920px;
+            margin-bottom: 52px;
+
+            .accordion {
+
+                .accordion__item {
+
+                    .accordion__item-header-wrapper {
+
+                        .accordion__item-header {
+                            width: 370px;
+                            height: 64px;
+
+                            .accordion__item-header-title {
+                                font-size: 16px;
+                            }
+
+                            .accordion__item-header-number {
+                                margin: 20px 16px 20px 20px;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+
+                    .active {
+                        height: 376px;
+                    }
+
+                    .accordion__item-body-wrapper {
+
+                        .accordion__item-body {
+                            width: 370px;
+                            height: 376px;
+
+                            .accordion__item-body-side {
+                                width: 370px;
+                                height: 158px;
+
+                                .accordion__item-body-side-back-span {
+                                    top: 14px;
+                                    right: -14px;
+                                    font-size: 80px;
+                                }
+
+                                .accordion__item-body-side-title {
+                                    font-size: 16px;
+                                    margin: 24px 0 0 20px;
+                                }
+
+                                .accordion__item-body-side-date {
+                                    margin: 8px 0 0 20px;
+                                    font-size: 14px;
+                                }
+
+                                .accordion__item-body-side-button {
+                                    margin: 22px 0 0 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

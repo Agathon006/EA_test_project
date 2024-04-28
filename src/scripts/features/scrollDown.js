@@ -1,6 +1,5 @@
 export default () => {
     document.querySelector('#down-link').addEventListener("click", function () {
-        // document.body.scrollIntoView({ behavior: "smooth", block: "end" });
         window.scrollTo({
             top: document.body.scrollHeight,
             behavior: "smooth"

@@ -1,0 +1,33 @@
+@media(max-width: 375px) {
+
+    .wrapper {
+
+        .events-section {
+            width: 320px;
+
+            .accordion {
+
+                .accordion__item {
+
+                    .accordion__item-header-wrapper {
+
+                        .accordion__item-header {
+                            width: 320px;
+                        }
+                    }
+
+                    .accordion__item-body-wrapper {
+
+                        .accordion__item-body {
+                            width: 320px;
+
+                            .accordion__item-body-side {
+                                width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
