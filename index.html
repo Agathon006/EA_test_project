@@ -1,14 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <script src="./src/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/css/reset.css">
+    <link rel="stylesheet" href="./src/styles/css/fonts.css">
+    <link rel="stylesheet" href="./src/styles/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./src/scripts/build/bundle.js" type="module" defer></script>
 </head>
+
 <body>
-    
+    <div class="pop-up-message-wrapper not-visible" id="pop-up-message" data-close="true">
+        <div class="pop-up-message-flex" data-close="true">
+            <div class="pop-up-message">
+                <button class="pop-up-message__close-button" data-close="true">
+                    <img src="./src/styles/images/close_button.svg" alt="close" class="pop-up-message__close-button-img"
+                        data-close="true">
+                </button>
+                <h2 class="pop-up-message__title" id="popup-title">SUCCESS!</h2>
+                <p class="pop-up-message__content" id="popup-content">You have successfully subscribed to the email
+                    newsletter</p>
+                <button class="pop-up-message__button" data-close="true">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <img src="./src/styles/images/1920/left_top_paint.svg" alt="left-top-paint"
+            class="left-top-paint-image animate__animated animate__fadeInTopLeft">
+        <img src="./src/styles/images/1920/right_top_paint.svg" alt="right-top-paint"
+            class="right-top-paint-image animate__animated animate__fadeInTopRight">
+        <header class="header">
+            <a href="./" class="logo animate__animated animate__fadeInDown">
+                <img src="./src/styles/images/1920/logo.svg" alt="logo">
+            </a>
+        </header>
+        <main class="main">
+            <h1 class="title animate__animated animate__fadeInDown animate__delay-300ms">Under Construction</h1>
+            <div class="subtitle-wrapper animate__animated animate__fadeInDown animate__delay-300ms">
+                <h3 class="subtitle">We're making lots of improvements and will be back soon</h3>
+            </div>
+            <section class="time-section animate__animated animate__fadeInDown animate__delay-600ms">
+                <ul class="time-section-list">
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value" id="days">00</span>
+                        <span class="time-section-list__element-span">Days</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value">:</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value" id="hours">00</span>
+                        <span class="time-section-list__element-span">Hours</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value">:</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value" id="minutes">00</span>
+                        <span class="time-section-list__element-span">Minutes</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value">:</span>
+                    </li>
+                    <li class="time-section-list__element">
+                        <span class="time-section-list__element-value" id="seconds">00</span>
+                        <span class="time-section-list__element-span">Seconds</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="event-page-section animate__animated animate__fadeInDown animate__delay-900ms">
+                <h3 class="subtitle">Check our event page when you wait:</h3>
+                <a href="#" class="event-page-section__link">
+                    <span class="event-page-section__link-span">Go to the event</span>
+                    <img src="./src/styles/images/1920/arrow-right.svg" alt="submit">
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__input-wrapper">
+                <input type="email" placeholder="Enter your Email and get notified" class="footer__input"
+                    id="email-input">
+                <button class="footer__input-button" id="send-email-button">
+                    <img src="./src/styles/images/1920/arrow-right.svg" alt="submit-button">
+                </button>
+            </div>
+            <button class="footer__down-link" id="down-link">
+                <span class="footer__down-link-span">Other Events</span>
+                <img src="./src/styles/images/1920/arrow-down.svg" alt="down">
+            </button>
+        </footer>
+        <h1 class="title" id="events-title">All events</h1>
+        <section class="events-section">
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--color
+                                    accordion__item-header-background--monocolor">
+                                </div>
+                                <span class="accordion__item-header-title">Hawaiian party</span>
+                                <span class="accordion__item-header-number">01</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper active">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">01</span>
+                                    <h2 class="accordion__item-body-side-title">Hawaiian party</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Мafia party</span>
+                                <span class="accordion__item-header-number">02</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">02</span>
+                                    <h2 class="accordion__item-body-side-title">Мafia party</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Party</span>
+                                <span class="accordion__item-header-number">03</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">03</span>
+                                    <h2 class="accordion__item-body-side-title">Party</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Party on the beach</span>
+                                <span class="accordion__item-header-number">04</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">04</span>
+                                    <h2 class="accordion__item-body-side-title">Party on the beach</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Home Security</span>
+                                <span class="accordion__item-header-number">05</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">05</span>
+                                    <h2 class="accordion__item-body-side-title">Home Security</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Network Design & Implementation</span>
+                                <span class="accordion__item-header-number">06</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">06</span>
+                                    <h2 class="accordion__item-body-side-title">Network Design & Implementation</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">System Design & Engineering</span>
+                                <span class="accordion__item-header-number">07</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">07</span>
+                                    <h2 class="accordion__item-body-side-title">System Design & Engineering</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div>
+                        <div class="accordion__item-header-wrapper">
+                            <div class="accordion__item-header">
+                                <div class="accordion__item-header-background
+                                    accordion__item-header-background--dark">
+                                </div>
+                                <div class="accordion__item-header-background
+                                     accordion__item-header-background--color">
+                                </div>
+                                <span class="accordion__item-header-title">Client Care Plans</span>
+                                <span class="accordion__item-header-number">08</span>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                    <div>
+                        <div class="accordion__item-body-wrapper inactive">
+                            <div class="accordion__item-body">
+                                <div class="accordion__item-body-side">
+                                    <span class="accordion__item-body-side-back-span">08</span>
+                                    <h2 class="accordion__item-body-side-title">Client Care Plans</h2>
+                                    <span class="accordion__item-body-side-date">13.02.2023</span>
+                                    <button class="accordion__item-body-side-button">More information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item-bottom-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

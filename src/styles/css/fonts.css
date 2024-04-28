@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src: url('../fonts/SF_Pro_Display/SF-Pro-Display-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Semibold';
+    src: url('../fonts/SF_Pro_Display/SF-Pro-Display-Semibold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Medium';
+    src: url('../fonts/SF_Pro_Display/SF-Pro-Display-Medium.otf') format('truetype');
+}

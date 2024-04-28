@@ -1,0 +1,34 @@
+@media(max-width: 1440px) {
+
+
+    .wrapper {
+
+        .events-section {
+            width: 1240px;
+
+            .accordion {
+
+                .accordion__item {
+
+                    .accordion__item-header-wrapper {
+
+                        .accordion__item-header {
+                            width: 85px;
+                        }
+                    }
+
+                    .active {
+                        width: 560px;
+                    }
+
+                    .accordion__item-body-wrapper {
+
+                        .accordion__item-body {
+                            width: 560px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

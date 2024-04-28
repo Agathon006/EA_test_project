@@ -1,0 +1,14 @@
+@media (max-width: 375px) {
+  .wrapper .events-section {
+    width: 320px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    width: 320px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 320px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
+    width: 320px;
+  }
+}/*# sourceMappingURL=375px.css.map */

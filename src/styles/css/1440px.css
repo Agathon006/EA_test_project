@@ -1,0 +1,14 @@
+@media (max-width: 1440px) {
+  .wrapper .events-section {
+    width: 1240px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    width: 85px;
+  }
+  .wrapper .events-section .accordion .accordion__item .active {
+    width: 560px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 560px;
+  }
+}/*# sourceMappingURL=1440px.css.map */

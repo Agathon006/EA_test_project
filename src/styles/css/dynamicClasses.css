@@ -1,0 +1,8 @@
+.not-visible {
+  display: none;
+  opacity: 0;
+}
+
+.wrong {
+  border-color: red !important;
+}/*# sourceMappingURL=dynamicClasses.css.map */

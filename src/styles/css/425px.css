@@ -1,0 +1,77 @@
+@media (max-width: 425px) {
+  .wrapper .left-top-paint-image {
+    content: url(../images/360/left_top_paint.svg);
+  }
+  .wrapper .right-top-paint-image {
+    content: url(../images/360/right_top_paint.svg);
+  }
+  .wrapper .header .logo {
+    content: url(../images/360/logo.svg);
+    margin-top: 80px;
+  }
+  .wrapper .main .subtitle-wrapper {
+    margin: 16px 0 40px;
+    max-width: 79%;
+  }
+  .wrapper .footer {
+    height: 141px;
+  }
+  .wrapper .footer .footer__input-wrapper {
+    margin: 30px 0 16px;
+    width: 280px;
+  }
+  .wrapper .footer .footer__input-wrapper .footer__input {
+    width: calc(100% - 68px - 20px);
+    padding: 10px 18px 10px 20px;
+  }
+  .wrapper .footer .footer__down-link {
+    margin-bottom: 30px;
+    gap: 4px;
+  }
+  .wrapper .title {
+    margin: 59px 0 20px;
+  }
+  .wrapper .events-section {
+    width: 370px;
+    height: 920px;
+    margin-bottom: 52px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    width: 370px;
+    height: 64px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-title {
+    font-size: 16px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-number {
+    margin: 20px 16px 20px 20px;
+    font-size: 24px;
+  }
+  .wrapper .events-section .accordion .accordion__item .active {
+    height: 376px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 370px;
+    height: 376px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
+    width: 370px;
+    height: 158px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-back-span {
+    top: 14px;
+    right: -14px;
+    font-size: 80px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-title {
+    font-size: 16px;
+    margin: 24px 0 0 20px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-date {
+    margin: 8px 0 0 20px;
+    font-size: 14px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-button {
+    margin: 22px 0 0 20px;
+  }
+}/*# sourceMappingURL=425px.css.map */
