@@ -359,6 +359,8 @@ body {
   width: 995px;
   height: 682px;
   background-image: url(../images/event_placeholder_image.svg);
+  background-size: cover;
+  background-position: center;
 }
 .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
   padding: 0 66px 50px 42px;
@@ -462,13 +464,17 @@ body {
   }
   .wrapper .footer {
     height: 160px;
+    flex-direction: column;
+    align-items: center;
   }
   .wrapper .footer .footer__input-wrapper {
+    margin-left: 0;
+    margin: 40px 0 15px;
     width: 360px;
   }
   .wrapper .footer .footer__input-wrapper .footer__input {
-    width: calc(100% - 53px - 20px);
-    padding: 10px 53px 10px 20px;
+    width: calc(100% - 68px - 20px);
+    padding: 10px 68px 10px 20px;
     font-size: 14px;
   }
   .wrapper .footer .footer__input-wrapper .footer__input-button {
@@ -477,6 +483,87 @@ body {
     width: 33px;
     height: 33px;
     content: url(../images/768/arrow-right.svg);
+  }
+  .wrapper .footer .footer__down-link {
+    margin-right: 0;
+    margin-bottom: 40px;
+    gap: 3px;
+  }
+  .wrapper .footer .footer__down-link .footer__down-link-span {
+    font-size: 16px;
+  }
+  .wrapper .title {
+    margin: 46px 0 20px;
+    font-size: 36px;
+  }
+  .wrapper .events-section {
+    width: 688px;
+    height: 1172px;
+    margin-bottom: 48px;
+  }
+  .wrapper .events-section .accordion {
+    flex-direction: column;
+  }
+  .wrapper .events-section .accordion .accordion__item {
+    flex-direction: column-reverse;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    flex-direction: row-reverse;
+    width: 688px;
+    height: 85px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-title {
+    writing-mode: initial;
+    transform: none;
+    font-size: 24px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-number {
+    margin: 27px 32px 26px 40px;
+    font-size: 32px;
+  }
+  .wrapper .events-section .accordion .accordion__item .active {
+    width: initial;
+    height: 460px;
+  }
+  .wrapper .events-section .accordion .accordion__item .inactive {
+    width: initial;
+    height: 0;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper {
+    transition: height 0.3s ease-out;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 688px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
+    padding: 0;
+    width: 688px;
+    height: 192px;
+    justify-content: initial;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-back-span {
+    top: -9px;
+    left: initial;
+    right: -29px;
+    font-size: 152px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-title {
+    font-size: 18px;
+    margin: 25px 0 0 40px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-date {
+    margin: 8px 0 0 40px;
+    font-size: 16px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-button {
+    margin: 29px 0 0 40px;
+    width: 169px;
+    height: 44px;
+    font-size: 16px;
   }
 }
 @media (max-width: 425px) {
@@ -512,9 +599,61 @@ body {
     height: 141px;
   }
   .wrapper .footer .footer__input-wrapper {
-    width: 260px;
+    margin: 30px 0 16px;
+    width: 280px;
   }
   .wrapper .footer .footer__input-wrapper .footer__input {
-    font-size: 12px;
+    width: calc(100% - 68px - 20px);
+    padding: 10px 18px 10px 20px;
+  }
+  .wrapper .footer .footer__down-link {
+    margin-bottom: 30px;
+    gap: 4px;
+  }
+  .wrapper .title {
+    margin: 59px 0 20px;
+  }
+  .wrapper .events-section {
+    width: 320px;
+    height: 920px;
+    margin-bottom: 52px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header {
+    width: 320px;
+    height: 64px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-title {
+    font-size: 16px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-header-wrapper .accordion__item-header .accordion__item-header-number {
+    margin: 20px 16px 20px 20px;
+    font-size: 24px;
+  }
+  .wrapper .events-section .accordion .accordion__item .active {
+    height: 376px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body {
+    width: 320px;
+    height: 376px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side {
+    width: 320px;
+    height: 158px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-back-span {
+    top: 14px;
+    right: -14px;
+    font-size: 80px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-title {
+    font-size: 16px;
+    margin: 24px 0 0 20px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-date {
+    margin: 8px 0 0 20px;
+    font-size: 14px;
+  }
+  .wrapper .events-section .accordion .accordion__item .accordion__item-body-wrapper .accordion__item-body .accordion__item-body-side .accordion__item-body-side-button {
+    margin: 22px 0 0 20px;
   }
 }/*# sourceMappingURL=index.css.map */
